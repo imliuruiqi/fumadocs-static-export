@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "next build",
+    "fix:next-out": "bun scripts/fix-next-out.ts",
+    "build": "next build && bun scripts/fix-next-out.ts",
     "dev": "next dev",
     "start": "next start",
     "postinstall": "fumadocs-mdx"
